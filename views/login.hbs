@@ -1,0 +1,10 @@
+{{>menu}}
+
+<form action="/login" method="post">
+    <input type="text" name="username" placeholder="username"><br><br>
+    <input type="password" name="password" placeholder="password"><br><br>
+    {{#if message}}
+    <p>{{message}}</p>
+    {{/if}}
+    <button>Login</button>
+</form>

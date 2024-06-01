@@ -1,0 +1,9 @@
+{{>menu}}
+{{#if user}}
+<form action="/changePassword/{{user.id}}" method="post">
+    <input type="password" name="oldPassword" placeholder="oldPassword">
+    <input type="password" name="newPassword" placeholder="newPassword">
+    <input type="password" name="confPassword" placeholder="coniformPassword">
+    <button>Change password</button>
+</form>
+{{/if}}
